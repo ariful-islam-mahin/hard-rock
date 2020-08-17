@@ -6,7 +6,7 @@ const searchMusic = () => {
     .then(res => res.json())
     .then(data => {   
         loadData = data;                              
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < 10; i++) {
             const songTitle = data.data[i].title;
             const artistName = data.data[i].artist.name;
             document.getElementById('allResult').innerHTML +=  `<div class="single-result row align-items-center  my-3 p-3">
